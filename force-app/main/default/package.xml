@@ -4,5 +4,9 @@
     <name>AuraDefinitionBundle</name>
     <members>testLightning</members>
   </types>
+  <types>
+    <name>ApexClass</name>
+    <members>testingClasss</members>
+  </types>
   <version>48.0</version>
 </Package>

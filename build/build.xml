@@ -16,13 +16,20 @@
         </classpath>
     </taskdef>
 
-    <!-- Shows check only; never actually saves to the server -->
+    <!-- Shows check only; never actually saves to the server 
     <target name="deployCodeCheckOnly">
         <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" pollWaitMillis="10000" deployRoot="./force-app/main/default" checkOnly="true" />
     </target>
 
     <target name="deployCode">
         <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="./force-app/main/default" testLevel="NoTestRun" rollbackOnError="true" />
-    </target>
+    </target>-->
+    <target name="deployUnpackaged">
+        <sf:deploy 
+            username="${sf.username}" 
+            password="${sf.password}"
+            serverurl="${sf.serverurl}" 
+            deployRoot="./force-app/main/default"/>
+      </target>
 
     </project>

@@ -23,7 +23,6 @@
 
     <target name="deployCode">
         <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="./force-app/main/default" testLevel="RunSpecifiedTests" rollbackOnError="true">
-             <runTest>SampleDeployClass</runTest> 
         </sf:deploy>
       </target>
 
